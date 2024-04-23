@@ -14,5 +14,5 @@ export function set(){
 }
 
 export function toggleMusic(){
-    stete.isMute = document.documentElement.classList.toggle('music-on')
+    state.isMute = document.documentElement.classList.toggle('music-on')
 }
