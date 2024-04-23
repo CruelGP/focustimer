@@ -29,8 +29,8 @@ html:not(.light) .ph-moon {
 
 html.running .ph-play-circle,
 html.running .ph-timer,
-html.running .ph-speaker-none,
-html:not(.running) .ph-speaker-high,
+html.music-on .ph-speaker-none,
+html:not(.music-on) .ph-speaker-high,
 html:not(.running) .ph-stop-circle,
 html:not(.running) .ph-pause-circle
 {display:none}
