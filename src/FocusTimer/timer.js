@@ -4,6 +4,9 @@ import { reset } from './actions.js'
 import { kitchenTimer } from './sounds.js'
 
 export function countdown(){
+    
+    clearTimeout(state.countdownId)
+
     if(!state.isRunning){
         return
     }
@@ -28,7 +31,7 @@ export function countdown(){
 
     console.log('iniciou')
 
-    setTimeout(() => countdown() ,1000)
+    state.countdownId = setTimeout(() => countdown() ,1000)
 }
 
 export function updateDisplay(minutes, seconds){
